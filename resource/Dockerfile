@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt install git
+RUN apt-get update && apt-get install -y git-all
 
 RUN mkdir -p /opt/resource/
 
