@@ -11,7 +11,7 @@ export GOARCH=amd64
 pushd companion
 
 mkdir build-out
-go build -o build-out/main main.go
+go build -o build-out/companion main.go
 export REPO=yifanzz/concourse-phabricator-companion
 docker build -f Dockerfile -t $REPO:$COMMIT .
 docker tag $REPO:$COMMIT $REPO:$TAG
